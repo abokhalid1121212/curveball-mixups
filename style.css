@@ -1,0 +1,24 @@
+*{box-sizing:border-box}
+body{margin:0;background:#171a1c;color:#f4f4f4;font-family:Arial,Helvetica,sans-serif}
+.wrap{width:min(1500px,calc(100% - 24px));margin:auto}
+header{height:92px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #2d3235}
+header img{width:48px;height:48px;object-fit:contain;filter:brightness(0) invert(1);opacity:.95}
+header div{text-align:center}h1{margin:0;font-size:30px;letter-spacing:1px;font-weight:800}header p{margin:3px 0 0;color:#888f92;font-size:9px;letter-spacing:2px}
+.players-box{margin:14px 0;padding:14px 15px;background:#202427;border:1px solid #353a3d;border-radius:6px}
+.title,.section-title{display:flex;align-items:center;gap:8px}.title img,.section-title img{width:21px;height:21px;object-fit:contain;filter:brightness(0) invert(1)}
+h2{margin:0;font-size:16px;letter-spacing:.4px}.title h2,.section-title h2{color:#67c58b}
+.player-entry-head{display:grid;grid-template-columns:42px 1fr 190px;gap:9px;margin-top:11px;padding:0 9px;color:#bfc4c5;font-size:11px;font-weight:800;letter-spacing:.5px}
+.player-entry-head span:first-child{text-align:center}.inputs{display:flex;flex-direction:column;margin:4px 0 10px}
+.player-row{display:grid;grid-template-columns:42px 1fr 190px;gap:9px;align-items:center;padding:4px 9px}
+.player-row .row-num{height:39px;display:grid;place-items:center;background:#363c40;border:1px solid #454b4e;font-weight:800}
+.inputs input,.inputs select{width:100%;height:39px;background:#171a1c;color:#fff;border:1px solid #464b4e;border-radius:4px;padding:0 11px;font-size:13px;font-weight:700;outline:0}
+.inputs input:focus,.inputs select:focus{border-color:#67c58b}.inputs select{cursor:pointer}
+.buttons{display:flex;gap:8px;margin:4px 9px 0}.buttons button{height:40px;border:0;border-radius:4px;padding:0 18px;font-weight:800;font-size:11px;cursor:pointer}.buttons #generate{background:#67c58b;color:#07100a}.buttons #reset{background:#33383b;color:#fff}
+main{display:grid;grid-template-columns:minmax(0,2.15fr) minmax(315px,.85fr);gap:12px}.matches,.leader{background:#202427;border:1px solid #353a3d;border-radius:6px;padding:8px}.section-title{padding:5px 6px 9px}.section-title h2 span{color:#aeb4b6;font-weight:500}
+.table-wrap{overflow-x:auto}table{width:100%;border-collapse:collapse;table-layout:fixed}th,td{border:1px solid #343a3d}th{height:36px;font-size:12px;font-weight:800}th.num{width:42px;background:#363c40}.blue{background:#3e79d4}.orange{background:#e99234}.score-head{background:#2c3033}
+.matches tbody td{height:39px;text-align:center;background:#2a2f32;font-size:12px;font-weight:700}.matches td.num{background:#3a4044}.score-cell{width:48px;background:#f4f4f4!important;color:#111;font-size:15px!important}.score-cell.win{background:#55bf8a!important}.score-input{width:100%;height:37px;border:0;background:transparent;text-align:center;font-size:15px;font-weight:800;color:#111;outline:0}.score-input:focus{background:#dff5e8}
+.player{font-weight:800}.p0{color:#f2c18b}.p1{color:#79e28f}.p2{color:#aaa7ff}.p3{color:#ff7474}.p4{color:#fff06a}.p5{color:#7be8ee}
+.leader table{table-layout:auto}.leader th{background:#2c3033;height:33px;font-size:10px}.leader td{height:37px;text-align:center;background:#292e31;font-size:11px}.leader td:nth-child(2){text-align:left;font-weight:800}.leader tr:first-child td:first-child{color:#f0cf62}.muted{color:#888;text-align:center!important;padding:22px}
+footer{text-align:center;color:#686e71;font-size:8px;letter-spacing:2px;padding:16px}
+@media(max-width:900px){main{grid-template-columns:1fr}.player-entry-head,.player-row{grid-template-columns:38px 1fr 160px}}
+@media(max-width:600px){.wrap{width:calc(100% - 10px)}header h1{font-size:21px}header img{width:36px;height:36px}.player-entry-head,.player-row{grid-template-columns:30px 1fr 120px;gap:6px}.player-entry-head{font-size:9px}.inputs input,.inputs select,.player-row .row-num{height:37px;font-size:11px}.matches{padding:4px}.matches th,.matches td{font-size:9px}.matches th.num{width:25px}.score-cell{width:36px}.player{white-space:nowrap}}

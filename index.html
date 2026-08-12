@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Curveball Mixups</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+<header>
+  <img src="ball-logo.png" alt="">
+  <div><h1>CURVEBALL MIXUPS</h1><p>3V3 • 10 UNIQUE GAMES</p></div>
+  <img src="ball-logo.png" alt="">
+</header>
+
+<section class="players-box">
+  <div class="title"><img src="ball-logo.png" alt=""><h2>PLAYERS</h2></div>
+  <div class="player-entry-head"><span>#</span><span>NAME</span><span>DIVISION</span></div>
+  <div id="inputs" class="inputs"></div>
+  <div class="buttons"><button id="generate">GENERATE MIXUP</button><button id="reset">RESET</button></div>
+</section>
+
+<main>
+<section class="matches">
+  <div class="section-title"><img src="ball-logo.png" alt=""><h2>MATCHES <span>(10)</span></h2></div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th class="num">#</th><th class="blue" colspan="3">BLUE TEAM</th><th class="score-head" colspan="2">SCORE</th><th class="orange" colspan="3">ORANGE TEAM</th><th class="num">#</th></tr></thead>
+      <tbody id="games"></tbody>
+    </table>
+  </div>
+</section>
+
+<aside>
+  <section class="leader">
+    <div class="section-title"><img src="ball-logo.png" alt=""><h2>LEADERBOARD</h2></div>
+    <table>
+      <thead><tr><th>#</th><th>PLAYER</th><th>W</th><th>L</th><th>GD</th></tr></thead>
+      <tbody id="leader"><tr><td colspan="5" class="muted">Generate a mixup first.</td></tr></tbody>
+    </table>
+  </section>
+</aside>
+</main>
+<footer>CURVEBALL MIXUPS</footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
